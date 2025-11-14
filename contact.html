@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contato - LojaNatural</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="container">
+        <a class="brand" href="index.html">LojaNatural</a>
+        <nav class="nav-actions">
+            <a id="authLink" href="login.html">Entrar</a>
+            <a href="cart.html" id="cartLink">Carrinho (<span id="cartCount">0</span>)</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section class="highlight-box">
+        <h2>Fale conosco</h2>
+        <p class="small-muted">Quer tirar uma dúvida, receber atendimento ou uma proposta comercial? Envie sua mensagem abaixo.</p>
+        <form id="contactForm" style="margin-top:12px">
+            <div class="form-row">
+                <div class="col">
+                    <label>Nome: <input name="name"></label>
+                </div>
+                <div class="col">
+                    <label>Email: <input name="email" type="email"></label>
+                </div>
+            </div>
+            <label>Mensagem:<textarea name="message"></textarea></label>
+            <div style="margin-top:10px">
+                <button class="btn" type="submit">Enviar mensagem</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div>© <span id="year"></span> LojaNatural</div>
+    </div>
+</footer>
+
+</body>
+</html>
