@@ -12,11 +12,7 @@ npm install
 2) Iniciar servidor:
 
 ```powershell
-# LojaNatural — Instruções de desenvolvimento
-
-Este repositório contém um site simples de loja com um servidor Node/Express leve para persistência local (arquivos JSON) e funcionalidades administrativas para desenvolvimento local.
-
-Siga os passos abaixo para configurar o ambiente no Windows (PowerShell) e executar o site em HTTP ou em HTTPS local.
+Siga os passos abaixo para executar o site em HTTPS local:
 
 ## 1) Instalar Node.js
 - Baixe e instale a versão LTS do Node.js em: https://nodejs.org/ (escolha o instalador para Windows).
@@ -139,3 +135,4 @@ Se quiser, eu posso:
 - Gerar um exemplo de `docker-compose` para rodar tudo isolado.
 
 Diga qual desses próximos passos prefere e eu continuo.
+
