@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Cadastrar — LojaNatural</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+    <div class="container">
+        <a class="brand" href="index.html">LojaNatural</a>
+        <nav class="nav-actions">
+            <a id="authLink" href="login.html">Entrar</a>
+            <a href="cart.html" id="cartLink">Carrinho (<span id="cartCount">0</span>)</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="auth">
+        <h2 style="color:var(--accent-dark);margin-bottom:8px">Criar conta</h2>
+        <form id="registerForm">
+            <label>Nome: <input name="name" required></label>
+            <label>E‑mail: <input name="email" type="email" required></label>
+            <label>Senha: <input name="password" type="password" required></label>
+            <label>Endereço: <input name="address"></label>
+            <div style="margin-top:12px">
+                <button class="btn" type="submit">Criar conta</button>
+            </div>
+        </form>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div>© <span id="year"></span> LojaNatural</div>
+        <div>
+            <a href="privacy.html">Política de privacidade</a> 
+            &nbsp;•&nbsp;
+            <a href="terms.html">Termos de uso</a> 
+            &nbsp;•&nbsp;
+            <a href="about.html">Quem somos</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

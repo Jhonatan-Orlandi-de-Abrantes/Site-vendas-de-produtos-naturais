@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Admin — LojaNatural</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+<header class="topbar">
+    <div class="container">
+        <a class="brand" href="index.html">LojaNatural</a>
+    </div>
+</header>
+
+<div id="adminApp" style="display:none">
+<main class="container" style="padding-top:18px">
+    <h2 style="margin-bottom:12px;color:var(--accent-dark)">Painel de administração</h2>
+    <div class="admin-grid">
+        <div class="admin-panel admin-form">
+            <h4>Adicionar / Editar Produtos</h4>
+            <form id="productForm" class="admin-form-controls">
+                <input name="id" hidden>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Título: <input name="title" required></label>
+                    </div>
+                    <div class="col">
+                        <label>Categoria: <input name="category"></label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Preço: <input name="price" type="number" step="0.01" required></label>
+                    </div>
+                    <div class="col">
+                        <label>Imagem (URL): <input name="image"></label>
+                    </div>
+                </div>
+                <label>Descrição:<textarea name="description"></textarea></label>
+                <div style="display:flex;gap:10px;align-items:center;margin-top:8px">
+                    <label style="display:flex;align-items:center;gap:8px">
+                    <input type="checkbox" name="promo"> Em promoção</label>
+                    <button class="btn" type="submit">Salvar produto</button>
+                </div>
+            </form>
+            <hr style="margin:18px 0;border:none;border-top:1px solid rgba(0,0,0,0.06)">
+            <h4>Produtos cadastrados</h4>
+            <div id="adminProducts"></div>
+        </div>
+        <aside class="coupons-box">
+            <h4>Cupons & promoções</h4>
+            <form id="couponForm" style="margin-top:8px">
+                <label>Código: <input name="code" required></label>
+                <label>Desconto (%): <input name="discount" type="number" required></label>
+                <button class="btn" type="submit">Criar cupom</button>
+            </form>
+            <div id="adminCoupons" style="margin-top:12px"></div>
+            <hr style="margin:12px 0;border:none;border-top:1px solid rgba(0,0,0,0.04)">
+            <h4>Pedidos</h4>
+            <div id="adminOrders"></div>
+            <hr style="margin:12px 0;border:none;border-top:1px solid rgba(0,0,0,0.04)">
+            <h4>Gerenciar Administradores</h4>
+            <div style="margin-top:8px">
+                <label>Pesquisar usuário por nome: <input id="adminSearchInput" placeholder="Nome do usuário"></label>
+                <div id="adminSearchResults" style="margin-top:8px"></div>
+            </div>
+            <hr style="margin:12px 0;border:none;border-top:1px solid rgba(0,0,0,0.04)">
+            <hr style="margin:12px 0;border:none;border-top:1px solid rgba(0,0,0,0.04)">
+            <h4>Comentários denunciados</h4>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+                <div class="small-muted">Histórico de denúncias</div>
+            </div>
+            <div id="adminReports"></div>
+        </aside>
+    </div>
+    </div>
+</main>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div>© <span id="year"></span> LojaNatural - Site por: Jhonatan Orlandi de Abrantes</div>
+        <div>
+            <a href="privacy.html">Política de privacidade</a> 
+            &nbsp;•&nbsp;
+            <a href="terms.html">Termos de uso</a> 
+            &nbsp;•&nbsp;
+            <a href="about.html">Quem somos</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Carrinho - LojaNatural</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header class="topbar">
+    <div class="container">
+        <a class="brand" href="index.html">LojaNatural</a>
+        <nav style="margin-left:auto">
+            <a href="shop.html">Continuar comprando</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container" style="padding-top:18px">
+    <h2 style="color:var(--accent-dark)">Seu carrinho</h2>
+    <div class="cart-grid">
+        <div>
+            <div id="cartItems" class="cart-items"></div>
+        </div>
+        <aside class="cart-summary">
+            <h3>Resumo do pedido</h3>
+            <div class="order-summary" id="orderSummaryMini">
+                <p class="small-muted">Itens: <span id="miniCount">0</span></p>
+                <p style="font-weight:800;font-size:1.25rem">Total: R$ <span id="cartTotal">0.00</span></p>
+            </div>
+            <div style="margin-top:12px">
+                <input id="couponInput" placeholder="Código do cupom" style="width:100%;padding:10px;border-radius:10px;border:1px solid rgba(0,0,0,0.06)">
+                <div style="display:flex;gap:8px;margin-top:8px">
+                    <button id="applyCoupon" class="btn">Aplicar</button>
+                    <a class="btn secondary" id="checkoutBtn" href="checkout.html">Finalizar</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div>© <span id="year"></span> LojaNatural - Site por: Jhonatan Orlandi de Abrantes</div>
+        <div>
+            <a href="privacy.html">Política de privacidade</a> 
+            &nbsp;•&nbsp;
+            <a href="terms.html">Termos de uso</a> 
+            &nbsp;•&nbsp;
+            <a href="about.html">Quem somos</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

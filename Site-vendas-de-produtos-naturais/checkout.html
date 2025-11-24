@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Checkout - LojaNatural</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+<header class="topbar">
+    <div class="container">
+        <a class="brand" href="index.html">LojaNatural</a>
+        <nav class="nav-actions">
+            <a id="authLink" href="login.html">Entrar</a>
+            <a href="cart.html" id="cartLink">Carrinho (<span id="cartCount">0</span>)</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container" style="padding-top:18px">
+    <h2 style="color:var(--accent-dark)">Checkout</h2>
+    <div class="checkout-grid">
+        <div class="checkout-box">
+            <h3>Endereço de entrega:</h3>
+            <form id="addressForm">
+                <div class="form-row">
+                    <div class="col">
+                        <label>Nome completo: <input name="name" required>
+                        </label>
+                    </div>
+                    <div class="col">
+                        <label>CEP: <input name="cep" required></label>
+                    </div>
+                </div>
+                <label>Rua: <input name="street" required></label>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Número: <input name="number" required></label>
+                    </div>
+                    <div class="col">
+                        <label>Complemento: <input name="complement"></label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col">
+                        <label>Cidade: <input name="city" required></label>
+                    </div>
+                    <div class="col">
+                        <label>Estado: <input name="state" required></label>
+                    </div>
+                </div>
+                <div style="margin-top:12px">
+                    <button class="btn" type="submit">Continuar para pagamento</button>
+                </div>
+            </form>
+        </div>
+        <aside class="order-summary">
+            <h3>Resumo do pedido:</h3>
+            <div id="orderSummary"></div>
+            <div style="margin-top:12px">
+                <p class="small-muted">Formas de pagamento</p>
+                <button id="payPix" class="btn" style="width:100%;margin-top:8px">Pagar com Pix</button>
+                <button id="payCard" class="btn" style="width:100%;margin-top:8px">Pagar com cartão</button>
+                <button id="payBoleto" class="btn" style="width:100%;margin-top:8px">Gerar boleto</button>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div>© <span id="year"></span> LojaNatural - Site por: Jhonatan Orlandi de Abrantes</div>
+        <div>
+            <a href="privacy.html">Política de privacidade</a> 
+            &nbsp;•&nbsp;
+            <a href="terms.html">Termos de uso</a> 
+            &nbsp;•&nbsp;
+            <a href="about.html">Quem somos</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LojaNatural — Produtos Naturais</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+<header class="topbar">
+  <div class="container">
+    <a class="brand" href="index.html">LojaNatural</a>
+    <form id="searchForm" class="search-inline">
+      <input id="searchInput" placeholder="Pesquisar produtos ou categorias..." />
+      <button type="submit">🔍</button>
+    </form>
+    <nav class="nav-actions">
+      <a id="authLink" href="login.html">Entrar</a>
+      <a href="cart.html" id="cartLink">Carrinho (<span id="cartCount">0</span>)</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero-zonal">
+    <div class="hero-left">
+      <h1>Produtos naturais para sua rotina</h1>
+      <p>Qualidade, sabor e sustentabilidade — entregue na sua porta!</p>
+      <a class="btn-zonal" href="shop.html">Ver produtos</a>
+    </div>
+  </section>
+  <section class="container" style="margin-top:18px">
+    <h2 style="color:var(--accent-dark)">Novidades</h2>
+    <div class="products" id="productList"></div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div>© <span id="year"></span> LojaNatural - Site por: Jhonatan Orlandi de Abrantes</div>
+    <div>
+      <a href="privacy.html">Política de privacidade</a> 
+      &nbsp;•&nbsp;
+      <a href="terms.html">Termos de uso</a> 
+      &nbsp;•&nbsp;
+      <a href="about.html">Quem somos</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

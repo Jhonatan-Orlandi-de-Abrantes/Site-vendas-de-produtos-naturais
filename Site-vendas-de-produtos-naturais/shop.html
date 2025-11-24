@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Loja - LojaNatural</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<header class="topbar">
+    <div class="container">
+        <a class="brand" href="index.html">LojaNatural</a>
+        <form id="searchFormTop" class="search-inline">
+            <input id="searchInputTop" placeholder="Pesquisar produtos..." />
+            <button type="submit">🔍</button>
+        </form>
+        <nav class="nav-actions">
+            <a href="admin.html" class="small">Admin</a>
+            <a href="login.html">Entrar</a>
+            <a href="cart.html" id="cartLink">Carrinho (<span id="cartCount">0</span>)</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container" style="padding-top:18px; display:flex; gap:18px">
+    <aside class="filters">
+        <h3 style="color:var(--accent-dark)">Filtros</h3>
+        <label>Categoria<select id="filterCategory"><option value="">Todas</option></select></label>
+        <label>Preço até: <input id="filterPrice" type="range" min="0" max="200" value="200"></label>
+        <label>Ordenar
+            <select id="sortBy">
+                <option value="relevance">Relevância</option>
+                <option value="price_asc">Preço ↑</option>
+                <option value="price_desc">Preço ↓</option>
+            </select>
+        </label>
+    </aside>
+    <section style="flex:1">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px">
+            <h2 style="color:var(--accent-dark)">Produtos</h2>
+        </div>
+        <div class="products" id="productList"></div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div>© <span id="year"></span> LojaNatural - Site por: Jhonatan Orlandi de Abrantes</div>
+        <div>
+            <a href="privacy.html">Política de privacidade</a> 
+            &nbsp;•&nbsp;
+            <a href="terms.html">Termos de uso</a> 
+            &nbsp;•&nbsp;
+            <a href="about.html">Quem somos</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
